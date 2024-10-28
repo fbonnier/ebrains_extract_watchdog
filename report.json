@@ -1,0 +1,330 @@
+{
+    "Metadata": {
+        "id": "fa393b61-92ab-4925-ad53-d36cde34c5d6",
+        "workdir": "/tmp/cwl-test/",
+        "workflow": {
+            "run": {
+                "url": null,
+                "path": "/tmp/cwl-test/"
+            },
+            "data": {
+                "url": null,
+                "path": "/tmp/cwl-test/"
+            }
+        },
+        "run": {
+            "code": [
+                {
+                    "url": "http://modeldb.science/eavBinDown?o=263259",
+                    "filepath": "/tmp/cwl-test/263259.zip",
+                    "path": "/tmp/cwl-test//code/263259/"
+                }
+            ],
+            "pre-instruction": "export PYTHONPATH=/tmp/cwl-test//code/263259/HH_project/:/tmp/cwl-test//code/263259/HH_project/single_cell_models/:/home/fbonnier/.local/lib/python3.8/site-packages:/home/fbonnier/opt/nest-simulator-2.20.0/lib/python3.8/site-packages:/usr/lib/python3.8/dist-packages; pip3 install matplotlib numpy==1.20.3",
+            "instruction": "python3 /tmp/cwl-test//code/263259/HH_project/network_simulations/ntwk_sim_demo.py --CONFIG 'HH_RS--HH_FS--CONFIG1' --tstop 5000 -f /tmp/cwl-test//code/263259/HH_project/network_simulations/data/example.npy",
+            "inputs": [],
+            "outputs": [
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/Readme.txt",
+                    "hash": "da041a8bcc80e240002104082000040d881401274a24e9038324811811902091"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/Plot_both.py",
+                    "hash": "81200c8805474e9e8004214c9a4ec80a26a10424cfca4a233054e1989b402080"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/Single_neuron_TF_RS.py",
+                    "hash": "c7679e92e0d2471b6ff86b1e5e025add9b6b73b3488e9eb5703abce036e54901"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/TF_B_HHFS.npy",
+                    "hash": "3f4811108020a1c113b697305c58194835020c282042d0048c3990021148a049"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/TF_B_HHFS_th.npy",
+                    "hash": "bfcd3591dc62b1cd0196b8627c1857686e942a0a134251b981c1180491098629"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/TF_B_HHRS_th.npy",
+                    "hash": "afcd3491d4f2b1cd0196b8e27c3906606e942a0b125251b583c11813100d9429"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/TF_B.npy",
+                    "hash": "18441130a02102482302830010101228a80980003091400b8024200182200061"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/Mean_field_TF.py",
+                    "hash": "75c8f92a0695011ba1ab008592bf0014ec930e0a9c8191ec8fa6b52c22a91031"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/Single_neuron_TF_FS.py",
+                    "hash": "83659ed0f29acf5befe86b1e5e825ad59b6b5391488eb8b5703ebca036f04081"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/Single_neuron_TF.py",
+                    "hash": "83679ed06090410be6a86b1c1e825adcbf6ac399488a90f5703aace032ed0113"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/TF_calculus/TF_B_HHRS.npy",
+                    "hash": "3fc0d01880a00289038790b05d5919c204824c083052d004060990031008b009"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/stability.npy",
+                    "hash": "14152436c541935d48c1564004120ce18961421110150e2441d662b5213d5c07"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/euler_method.py",
+                    "hash": "180270ab03c512f41e0945ee5115d0005fa3a38c9dc1d3201a62b215218c9e8a"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/__init__.pyc",
+                    "hash": "bb03095805b01516422402153c174103848d9603008662205024385120080081"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/master_equation.py",
+                    "hash": "d91c3bcd08e842260f91e1b3b2195484928200bf0b81d45aa0503a40ab0f86e3"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/__init__.py",
+                    "hash": "ab020010059010065224021524134101008f828200966a005024301110080000"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/master_equation.pyc",
+                    "hash": "db3c3bc508b80b461f81e1b3f219508c9282229f2b81445b29781e40a92f86e1"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/mean_field/euler_method.pyc",
+                    "hash": "d00270ef03e512d01711018e6015d0005bb2e30d1dc15d681a26b115218c9e08"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/cell_library.pyc",
+                    "hash": "4a5001d5433ce32efc1753825380052a99801eb32fa89c64a10a483b584a4801"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/Example.py",
+                    "hash": "162061241882026805012a00c00134900a0a011128c405440a84ce890280014d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/cell_library.py",
+                    "hash": "025001954b34422ecc2732804208156e98802cb32da09e64b4ca483b5c6b5800"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/cell_construct.pyc",
+                    "hash": "49a8057382a770270cbfce736ec294a6c29804bd01d0c7a2a0194b5fe60de141"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/__init__.pyc",
+                    "hash": "fb03083c0df011064224025d34174109808dd207008662205024301120080080"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/__init__.py",
+                    "hash": "ab020010059010065224021524134101008f828200966a005024301110080000"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/single_cell_models/cell_construct.py",
+                    "hash": "4968157380b7732504bfdc734fc384efc298049d2180c7e68018681df05d41e5"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/waveform_input.py",
+                    "hash": "33c35c758638348c0f08c03fdb54124c0864e1d284c616dfa300ac245b7a184d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/sngle_neuron.py",
+                    "hash": "ce6142b8609c010c67a866983606d2c29d430337428af0e5322ab2a828040311"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/compare_with_mean_field.py",
+                    "hash": "67ce757c29e5e0d1b1f37372f6b50d7def2bef25fdc9444e3fa5df3d22ecdc71"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/plot_single_sim.py",
+                    "hash": "03915018b199099e75216918f70940371b0861249492c561acf1aff99619b245"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/plot_single_sim.pyc",
+                    "hash": "04915438a1bb09df7421cd18f70960310d086367b4d2c561a7702ffb9e1da205"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/__init__.pyc",
+                    "hash": "fb03083c0df011064224025d34174109808dd207008662205024301120080080"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/__init__.py",
+                    "hash": "ab020010059010065224021524134101008f828200966a005024301110080000"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/time_varying_input.pyc",
+                    "hash": "7ae4cdd28caea3d4fb22ddf5f6a68a10f987eb7589d80619890ecd7119148ab7"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/time_varying_input.py",
+                    "hash": "32e4cc728cb632d4e3229df5f6a68a50fd87e9d4e9d116dd9d2ecd2119500afd"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/ntwk_sim_demo.py",
+                    "hash": "6e17d8054ffa85eb0e15044a040e41ba281ea8da2cfe2000e806e8195c3e1363"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/compare_with_mean_field.pyc",
+                    "hash": "77c775f82ff5a8d5bdd313f2f6b50d66ee2bdf27fdc9c56f3fb5df3d22e85c71"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/HH_response.npy",
+                    "hash": "7c283854b8d09f646f42ed0d801724456a311ea81f85a70e7ec2b0a8ab46016d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/ntwk_sim_demo.pyc",
+                    "hash": "6f11d8014fea958f36050448140d61b830568a9b2cff2201fbc6e89b4c5e82e1"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/waveform_input.pyc",
+                    "hash": "33c37c5d846804ec0e08c13dfb54560c0864a1f7a0c096dc8705a86c5d1f9405"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/data/example.npy",
+                    "hash": "b7f20998a0c2820a49103b11001430c09ebb1831a94817865f22542082d02885"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/data/__for_folder_creation",
+                    "hash": "730651df0f711e0b117a811754b85ba701a40fd559c8851378890238aa1009d3"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/network_simulations/data/waveform_input_example.npy",
+                    "hash": "37fb3bb1fcaaaeaa1718fabd3f5432cdecfeb3d7e84097becf07e63f6b5b1575"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/theoretical_tools.py",
+                    "hash": "d2a224ba2d2c953599e83b50c96dbd7bbbfc3182e7a2fed69ac51619d04a6208"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/load_config.py",
+                    "hash": "360214540430780e1d0c33c552186ec40a2c64c0dc85000b28864233b548400d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/__init__.pyc",
+                    "hash": "fb03083c0df011064224025d34174109808dd207008662205024301120080080"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/__init__.py",
+                    "hash": "ab020010059010065224021524134101008f828200966a005024301110080000"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/load_config.pyc",
+                    "hash": "3523801c062070061b8c1ac1531976418a047cd1dc85022b28c04633f528604d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/tf_simulation.pyc",
+                    "hash": "9d755acc0ca8b10c7e01519b483d08f2889330fb4b920972452656862d98935b"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/tf_simulation.py",
+                    "hash": "8cf4dee40c883c14fe415193083c11f3cb9b60fa0f8308d60d027296207113db"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/theoretical_tools.pyc",
+                    "hash": "d2aa203a2d2c951199e93b50d9651d71b9dc728347a2dcd6c9e78619d1087200"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/data/__for_folder_creation",
+                    "hash": "730651df0f711e0b117a811754b85ba701a40fd559c8851378890238aa1009d3"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/data/HH_RS_CONFIG1_fit.npy",
+                    "hash": "07991c13d522f14e892eeca02a78a10173b491609be41ff6f1c594333969ac4d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/transfer_functions/data/HH_FS_CONFIG1_fit.npy",
+                    "hash": "13991413852ab142ab2ecda12b78a10153b0926089e59ed6f145b42bb371265d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/synapses_and_connectivity/syn_and_connec_library.py",
+                    "hash": "3fcbd15dc67ecacef50e52825e86336fb9c00cf78da9dc66fd03c33ab9624b5d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/synapses_and_connectivity/syn_and_connec_library.pyc",
+                    "hash": "7ecbd1f5667edbcefd0e528a5f86336eb9c04cf7cda9dc64fd03c03ab9425b0d"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/synapses_and_connectivity/syn_and_connec_construct.pyc",
+                    "hash": "6fabf5f586eff947d53fccf36ec6c3e6eece84f52588ceacdd93425da956c34f"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/synapses_and_connectivity/__init__.pyc",
+                    "hash": "bb03083c05b011464224825d34174109808dd203408e72205024301120092080"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/synapses_and_connectivity/__init__.py",
+                    "hash": "ab020010059010065224021524134101008f828200966a005024301110080000"
+                },
+                {
+                    "url": null,
+                    "path": "/tmp/cwl-test/outputs/263259/HH_project/synapses_and_connectivity/syn_and_connec_construct.py",
+                    "hash": "7fbbf57586eff84f952fccf34ee683e7aeca85d50188cea6df174317a952c34f"
+                }
+            ],
+            "environment": {
+                "pip install": [],
+                "module deps": [],
+                "profiling configuration": []
+            }
+        }
+    }
+}

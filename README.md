@@ -1,2 +1,2 @@
-# ebrains_extract_watchdog
-Workflow step to extract data from watchdog log of EBRAINS model's run
+# hbp_extract_watchdog
+Extract watchdog list of files to HBP JSON report for verification phase
