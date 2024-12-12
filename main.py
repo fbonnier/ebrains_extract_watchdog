@@ -3,12 +3,14 @@ import json
 import sys
 import os
 from nilsimsa import Nilsimsa
+import traceback
 
-exceptions = [".cache", ".cython", "__pycache__"]
+exceptions = [".cache", ".cython", "__pycache__", ".nestrc"]
 
 def extract_watchdog_to_json (watchdog_file:str, json_file:str):
     
     list_of_outputs = []
+    errors = []
 
     with open (watchdog_file, 'r') as watchdog_f:
         # singletons = list(dict.fromkeys(watchdog_f.readlines()))
@@ -41,15 +43,19 @@ def extract_watchdog_to_json (watchdog_file:str, json_file:str):
         singletons = list(dict.fromkeys(singletons))
         
         for ifile in singletons:
-            all_info = os.path.basename(ifile) + str(os.path.getsize(ifile))
-            filehash = Nilsimsa(all_info).hexdigest()
-            list_of_outputs.append({"url": None, "path": ifile, "hash": filehash, "size": os.path.getsize(ifile), "filename": os.path.basename(ifile)})
+            try:
+                all_info = os.path.basename(ifile) + str(os.path.getsize(ifile))
+                filehash = Nilsimsa(all_info).hexdigest()
+                list_of_outputs.append({"url": None, "path": ifile, "hash": filehash, "size": os.path.getsize(ifile), "filename": os.path.basename(ifile)})
+            except Exception as e:
+                errors.append(str(ifile)  + " " + str("".join(traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__))))
 
         
     json_content = None
     with open (json_file, 'r') as json_f:
         json_content = json.load(json_f)
         json_content["Outputs"] = list_of_outputs
+        json_content["error"] = errors
     return json_content
 
 if __name__ == "__main__":
