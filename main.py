@@ -48,7 +48,7 @@ def extract_watchdog_to_json (watchdog_file:str, json_file:str):
                 filehash = Nilsimsa(all_info).hexdigest()
                 list_of_outputs.append({"url": None, "path": ifile, "hash": filehash, "size": os.path.getsize(ifile), "filename": os.path.basename(ifile)})
             except Exception as e:
-                errors.append(str(ifile)  + " " + str("".join(traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__))))
+                errors.append(str(ifile)  + " " + str("".join(traceback.format_exception(e))))
 
         
     json_content = None
